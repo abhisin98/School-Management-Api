@@ -1,2 +1,7 @@
+# Ignore all .log files
+*.log
+
+# Ignore all files in any directory named temp
 node_modules
-build
+temp/
+build/

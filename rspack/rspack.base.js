@@ -18,7 +18,7 @@ const config = {
   context: projectRoot,
   target: "node",
   entry: {
-    server: [path.resolve(projectRoot, "..", "./src/server.ts")],
+    index: [path.resolve(projectRoot, "..", "./src/server.ts")],
   },
   output: {
     path: path.resolve(projectRoot, "..", "./build"),

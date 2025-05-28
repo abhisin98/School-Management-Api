@@ -11,7 +11,7 @@ const WebpackBar = require("webpackbar/rspack");
 const config = {
   mode: "development",
   entry: {
-    server: ["@rspack/core/hot/poll?100"],
+    index: ["@rspack/core/hot/poll?100"],
   },
   optimization: {
     minimize: false,
@@ -19,7 +19,7 @@ const config = {
   devtool: "cheap-source-map",
   plugins: [
     new RunScriptWebpackPlugin({
-      name: "server.js",
+      name: "index.js",
       autoRestart: false,
     }),
     new ESLintPlugin({

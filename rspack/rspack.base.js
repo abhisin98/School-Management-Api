@@ -9,8 +9,10 @@ const projectRoot = __dirname;
 // ------------------------------- Env -------------------------------
 // replace accordingly './.env' with the path of your .env file
 dotenv.config({
-  path: path.join(projectRoot, ".env"),
+  path: path.join(projectRoot, "..", ".env"),
 });
+
+console.log(path.join(projectRoot, "..", ".env"));
 
 // ------------------------------- Rspack -------------------------------
 /** @type {import('@rspack/cli').Configuration} */
